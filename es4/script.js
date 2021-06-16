@@ -46,7 +46,7 @@ for (var y = 0; y < studenti.length; y++) {
     }
 }
 
-for (var x = 0; x < 3; x++) {
+for (var x = 0; x < studenti.length; x++) {
     var user = prompt("Inserisci una descrizione dell' alunno");
     studenti[x].descrizione = user;
 }
