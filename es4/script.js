@@ -40,6 +40,12 @@ var studenti = [
     },
 ];
 
+for (var y = 0; y < studenti.length; y++) {
+    for (var key in studenti[y]) {
+        document.getElementById("studenti1").innerHTML += "<li>" + key + ": " + studenti[y] [key] + "</li>";
+    }
+}
+
 for (var x = 0; x < 3; x++) {
     var user = prompt("Inserisci una descrizione dell' alunno");
     studenti[x].descrizione = user;
@@ -47,12 +53,10 @@ for (var x = 0; x < 3; x++) {
 
 console.log(studenti);
 
+// bonus:
+
 for (var i = 0; i < studenti.length; i++) {
     for (var key in studenti[i]) {
-        document.getElementById("studenti").innerHTML += "<li>" + key + ": " + studenti[i] [key] + "</li>";
+        document.getElementById("studenti2").innerHTML += "<li>" + key + ": " + studenti[i] [key] + "</li>";
     }
 }
-
-
-
-

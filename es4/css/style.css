@@ -1,9 +1,13 @@
 
-#studenti{
+div {
     margin: 30px auto;
     width: 400px;
     border: 2px solid black;
     border-radius: 5px;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 35px;
+}
+
+h4 {
+    text-align: center;
 }
