@@ -60,3 +60,17 @@ for (var i = 0; i < studenti.length; i++) {
         document.getElementById("studenti2").innerHTML += "<li>" + key + ": " + studenti[i] [key] + "</li>";
     }
 }
+
+// bonus versione due, js - ES6:
+
+for (var i = 0; i < studenti.length; i++) {
+    const {nome, cognome, age, descrizione} = studenti[i];
+    document.getElementsByClassName("tabella")[0].innerHTML += `
+    <ul>
+        <li>${nome}</li>
+        <li>${cognome}</li>
+        <li>${age}</li>
+        <li>${descrizione}</li>
+    </ul>
+    `
+}
